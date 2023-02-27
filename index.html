@@ -5,11 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
 </head>
 
 <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
 
+            <label id="name-label" for="name">Name</label>
+            <Input id="name" name="name" placeholder="Enter your name" type="text" required />
+
+            <label id="email-label" for="email">Email</label>
+            <Input id="email" name="email" placeholder="Enter your email" type="email" required />
+
+            <label id="number-label" for="number">Age (optional)</label>
+            <Input id="number" name="age" placeholder="Enter your age" type="number" min="10" max="120" />
+
+
+
+        </fieldset>
+        <fieldset>
+
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown">
+                <option value="" disabled>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+            </select>
+
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="def"><Input name="recommend" id="def" value="definetly" type="radio" /> Definitely</label>
+            <label for="may"><Input name="recommend" id="may" value="maybe" type="radio" /> Maybe</label>
+            <label for="not"><Input name="recommend" id="not" value="notsure" type="radio" /> Not Sure</label>
+
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select name="feauture" id="dropdown2">
+                <option value="" disabled>Select an options</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="front"><Input name="recommend" id="front" value="frontend" type="checkbox" /> Frontend</label>
+            <label for="back"><Input name="recommend" id="back" value="backend" type="checkbox" /> Backend</label>
+            <label for="challenge"><Input name="recommend" id="challenge" value="challenge" type="checkbox" />
+                Challenges</label>
+
+
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" id="commments" cols="30" rows="10"
+                placeholder="Enter your Comment here..."></textarea>
+
+            <input type="submit" id="submit">
+
+        </fieldset>
+
+    </form>
 </body>
 
 </html>
