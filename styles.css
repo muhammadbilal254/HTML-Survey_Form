@@ -1,1 +1,82 @@
-body {}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+body {
+
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    font-size: 20px;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: white;
+
+}
+
+#title,
+#description {
+    margin: 0.5em auto;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 2em;
+}
+
+#description {
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+#survey-form {
+    margin: 2rem auto;
+    padding: 2em;
+    background-color: #10102f;
+    opacity: 0.8;
+    max-width: 50%;
+    min-width: 300px;
+    border-radius: 20px;
+}
+
+.field {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px 10px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+#name,
+#email,
+#number,
+textarea {
+    width: 98% !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px;
+    background-color: green;
+
+}
+
+
+
+input[type="submit"] {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+p {
+    margin: 10px 0;
+}
